@@ -1,19 +1,17 @@
+import React from 'react';
+import Questions from './components/Questions';
+import Answers from './components/Answers';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
        <h2>Caderno de exercícios</h2>
       </header>
       <div>
-        <h3>Exercício 1</h3>
-        <p>Escreva um programa que imprima “Hello, World!” na tela.</p>
-        <code>
-          <pre>
-            {`console.log("Hello, World!");`}
-          </pre>
-        </code>
+        <Questions />      
+        <Answers />
       </div>
     </div>
   );

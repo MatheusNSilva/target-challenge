@@ -1,19 +1,28 @@
 import React from 'react';
-import Questions from './components/Questions';
-import Answers from './components/Answers';
+import { Header } from './components';
+import { 
+  HomePage,
+  QuestionsPage,
+  AnswersPage
+} from './pages';
+import { 
+  BrowserRouter,
+  Route,
+  Routes,
+  Link
+} from 'react-router-dom';
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-       <h2>Caderno de exercícios</h2>
-      </header>
-      <div>
-        <Questions />      
-        <Answers />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/questions" element={<QuestionsPage />} />
+        <Route path="/answers" element={<AnswersPage />} />
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

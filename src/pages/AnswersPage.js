@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { ExpansableCard, PageContainer } from '../styles';
 import { Typography, Box } from '@mui/material';
 import { TaskAlt } from '@mui/icons-material';

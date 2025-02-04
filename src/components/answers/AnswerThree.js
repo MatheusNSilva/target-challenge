@@ -5,6 +5,7 @@ import {
     finHighestBillingAmountDay, 
     findTotalDaysAboveAverage 
 } from '../../utils/billingHelper';
+import { Typography } from '@mui/material';
 
 const AnswerThree = () => {
     const lowestBillingAmountDay = findLowestBillingAmountDay(billingAmount);
@@ -12,16 +13,18 @@ const AnswerThree = () => {
     const numberOfDaysAboveAverage = findTotalDaysAboveAverage(billingAmount);
     return (
         <div>
-            <h4>Exercício 3:</h4>
-            <p>
+            <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
                 Sobre o faturamento de uma empresa, temos as seguintes informações:
-                <br />
+            </Typography>
+            <Typography variant="subtitle1">
                 O menor valor de faturamento do mês: {lowestBillingAmountDay}
-                <br />
+            </Typography>
+            <Typography variant="subtitle1">    
                 O maior valor de faturamento do mês: {highestBillingAmountDay}
-                <br />
+            </Typography>
+            <Typography>
                 O número de dias em que o valor de faturamento diário foi superior à média mensal: {numberOfDaysAboveAverage}
-            </p>
+            </Typography>
         </div>
     )
 };

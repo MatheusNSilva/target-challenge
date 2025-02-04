@@ -18,7 +18,7 @@ const ExpansableCard = ({ title, children, sx }) => {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                <Typography variant="subtitle1">{title}</Typography>
+                <Typography sx={{ color: "#f57320", fontWeight: 600 }} variant="subtitle1">{title}</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     {children}

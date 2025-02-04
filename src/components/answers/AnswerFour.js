@@ -4,7 +4,6 @@ import { findStateRepresentativeBillingAmount } from '../../utils/billingHelper'
 import { Typography } from '@mui/material';
 
 const AnswerFour = () => {
-    const states = statesBillingAmount.map((state) => state.name);
     return (
         <div>
             <Typography variant="subtitle1" sx={{ marginBottom: 2, fontWeight: 600 }}>Sobre o percentual de representação de cada estado no faturamento mensal de uma de uma distribuídora, temos as seguintes informações:</Typography>

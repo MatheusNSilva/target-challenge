@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Typography, TextField, Button, Box } from '@mui/material';
 import checkNumberInFibonacci from '../../utils/checkNumberInFibonacci';
 
-
 const AnswerTwo = () => {
     const [isFibonacciNumber, setIsFibonacciNumber] = useState(null);
     let isFibonacci = null;

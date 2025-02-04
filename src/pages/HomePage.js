@@ -1,6 +1,5 @@
 import { PageContainer } from "../styles";
 import { Typography } from "@mui/material";
-// import WorkBook from "../../public/images/workbook.jpeg";
 
 const HomePage = () => {
     return (
